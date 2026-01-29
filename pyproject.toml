@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stegolsb"
+version = "1.0.0"
+authors = [
+  { name="Cypher", email="cypher@example.com" },
+]
+description = "A Python steganography tool for hiding data in images and audio files using LSB (Least Significant Bit) encoding."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Sound/Audio",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "Pillow>=9.0.0",
+    "cryptography>=3.4.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cypher-21/stegoLSB"
+"Bug Tracker" = "https://github.com/cypher-21/stegoLSB/issues"
+
+[project.scripts]
+stegolsb = "stegolsb:main"
